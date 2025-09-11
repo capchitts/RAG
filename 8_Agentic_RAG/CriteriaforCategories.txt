@@ -1,0 +1,81 @@
+**Criteria for Categories:**
+
+        1. **No Response Required:**
+            1.1. Purely informational emails: If the latest email in the thread is purely informational, provides an acknowledgment, receiving acknowledgment, a confirmation, a thank-you note, or does not require any action from customer care, categorize it as 'No Response Required'. Ensure there are no unresolved queries in the email thread.
+            1.1.1. If the latest email is solely a thank-you note (e.g., "Thank you", "Thanks", "Thanks for the update"), and there are no new questions or requests for further action in that message, categorize the thread as 'No Response Required'. Ignore earlier parts of the thread unless the latest email reopens or adds to a previous query.
+            1.2. Order confirmation or status updates: Emails that acknowledge receipt of information, such as order confirmation or shipping status updates, and do not require any further action. This also includes emails that merely confirm different order attributes such as confirmation numbers, quantity, items etc of an already entered or existing order.
+            1.3. Responses already provided: If the latest email is an acknowledgment of a response to earlier inquiries provided by Medtronic's team, categorize it as 'No Response Required'.
+            1.4. Promises to act or follow-up: If the latest email is a promise to act on or follow up on earlier inquiries and does not require any action from the recipient.
+            1.5. Latest email warrants no follow-up: When dealing with email chains in the email data, if the latest email requires no action, categorize the entire thread as 'No Response Required'.
+            1.6. Awaiting External Input: If the latest email indicates that further action or information is pending from an external party and the customer care team cannot proceed without this input, categorize it as 'No Response Required'. This applies even if there are unresolved queries in the thread, provided that action is contingent upon receiving the awaited input or confirmation.
+            1.7. If the latest email has already shared the availability status of the items, classify it as No Response Required, as the inquiry has been addressed and no further action is needed.
+
+        2. **Order Status Inquiry:**
+            2.1. Order status/ETA/tracking: Inquiries about existing orders' shipping dates, tracking details, or ETA.
+            2.2. Order line or item/product status/ETA/tracking: Inquiries about line item status within orders.
+            2.3. Inquiry about item numbers, product numbers, quantities,  sales order number, or any other order-related references: Queries related to confirmation numbers, sales order numbers, or any other order references.
+            2.4. Availability, release, or restock dates for backordered items already part of existing orders: Requests for availability or restock information for items in existing orders.
+            2.5. Cancellation reasons or rejection status: Inquiries about the cancellation or rejection of items within existing orders should be classified as "Out of Scope".
+            2.6. Emails requesting for or inquiring about the **dispatch** of an already confirmed order should be categorized as "Out of Scope".
+            2.7. Classify the email as "Out of Scope" if it includes a request for "Prioritization of the delivery or invoice".
+            2.8. Classify the email as "Out of Scope" if it refers to an "Order quantity discrepancy", since quantity mismatches are outside the scope of supported use cases.
+            2.9. If the email contains a request for "pending price adjustments", categorized the email as Out of Scope as pricing disputes or corrections are not within the scope.
+
+            
+            **Note**: Any actionable requests (e.g., modifying confirmation numbers, item or product numbers, changing order details, new product recommendations or suggestions for alternatives, requests for substitution of products or items, changing any order details such as modifying the quantity, moving or rescheduling the delivery dates or adjustment etc or even cancellation or closure of orders) should **strictly** be categorized as 'Out of Scope'. 
+
+        3. **Product Availability:**
+            3.1. Product availability inquiries: If email inquiries about availability of products **without** providing any order details. The product must also be explicitly mentioned.
+            3.2. Backorder or allocation status: Questions regarding backordered items or items on allocation without order specifics.
+            3.3. If the latest email already conveyed or provided the item availability status, classify it as "No Response Required" because no further action is needed.
+            3.4. If email queries about the unavailability of the requested material and the provision of alternative suggestions, classify it as "Out of Scope"
+
+            **Note:** If the inquiry is about a product availability, but the user has mentioned any order details with it (such as order number, PO number or purchase order number etc), then it must be categorized as "Order Status Inquiry". "Product Availability" should be the category only when product availability inquiries are made without providing any of the order details. Also, please pay attention to differentiate between inquiries about product availability (which seek information or confirmation) and emails that merely confirm availability. Only the former should be classified under 'Product Availability.'
+
+        4. **Invoice Request:**
+                4.1. Invoice copy requests: Requests for copies of invoices, missing invoices, or confirmation of invoice generation or issuance.
+                4.2. Retrieving invoices: Inquiries about retrieving an invoice or obtaining overdue invoices.
+                4.3. Credit/debit document requests: Emails requesting or inquiring about a credit copy, a credit memo, a debit copy, or a debit memo — **only** when the context is about receiving these documents (NOT disputing or correcting them).
+                4.4. Out of Scope (Invoice-related inquiries): Be very careful not to categorize the following kinds of requests as "Invoice Request". Insted, they must be categorized as "Out of Scope".
+                    4.4.1. Emails inquiring about modifying, updating, correcting, processing, or referencing an invoice for other purposes (e.g., purchase orders, billing disputes, or amount clarifications).
+                    4.4.2. Emails about billing issues such as incorrect amounts, wrong items, or address corrections.
+                4.5. Classify the email as Out of Scope, if it relates to a duplicate invoice issue or billing discrepancy.
+
+
+
+        5. **Packing Slip:**
+                5.1. Packing slip requests: Requests for packing slips or inquiries about missing slips.
+                5.2. Proof of Delivery (POD): Requests for delivery verification or POD related queries.
+
+        6. **Sales Rep Inquiries:**
+                6.1. Sales representative details: Inquiries about sales rep names or contact information. The unresolved query could also be asking about sales representative details or just rep details.
+
+        7. **Order Entry Request:**
+                7.1. Order Confirmation Requests: Emails requesting confirmation of receipt for purchase orders, particularly those with attachments. Ensure clear identification of an intent to confirm an order.
+                7.2. Order Processing Requests: Emails that request processing, reviewing, or confirmation of new orders. Focus on identifying explicit or implied requests to initiate order processing.
+                7.3. Item Availability and Order Intent: Emails that inquire about item availability or use specific phrases like "send request," which may reflect regional or client-specific terminology related to order entry. Recognize that these inquiries often imply an intent to place an order if items are available.
+                7.4. Medical Procedure-Related Requests: Emails discussing items needed for specific medical procedures, such as surgeries, or referencing items against a patient's name without a purchase order or order number. Treat inquiries about confirming or adding items related to upcoming medical procedures as order entry requests, especially if they include confirmation or delivery timing inquiries.
+            **Note:** Emails requesting for or inquiring about the **dispatch** of an already confirmed order should be categorized as "Out of Scope".
+
+        8. **Price Discrepancy:**
+                8.1. Inquiries about price discrepancy: Emails inquiring about price discrepancy or price differences.
+                8.2. Emails about RADAR: Emails with RADAR numbers or approvals or rejects. RADAR indicates pricing discrepancies. 
+                8.3. Inquiries about price modifications: Emails inquiring or requesting for price difference modifications, price updations and even price validations.
+
+        9. **Out of Scope:**
+                9.1. Requests requiring modification of existing orders: Any email requesting modifications to be performed on existing orders (e.g., changing CFN, item or product number, modifying orders, changing units, quantity, changing shipping route, changing or rescheduling delivery dates, substituting item or product etc.). The only modifications allowed are with respect to price and those emails must be appropriately classified as "Price Discrepancy".
+                9.2. Request to perform actions on an existing order: If the email requests to perform actions on an existing order,  e.g. releasing order from credit holds, credit release or billing or delivery blocks (BB/DB), adding credit holds or billing or delivery blocks (BB/DB), updating accounts or addresses, categorize it as 'Out of Scope'. 
+                9.2. Internal processes: If the email relates to internal financial processes, such as credit release requests, manual assignment or manual allocation, price discrepancy these typically are handled outside of customer service interactions and hence, should be out of scope. This also applies to inquiries about orders with items or products under manual allocation or assignment. It is an internal process and should be categorized as "Out of Scope". Additionally, emails requesting letter of credit, letter of backorder (letter about product unavailability) are also internal processes and should be strictly categorized as "Out of Scope". The only actions allowed are with respect to price and those emails must be appropriately classified as "Price Discrepancy".
+                9.3. Delivery/carrier issues: Inquiries about delivery issues like missing packages in transit, carrier tracking status not changing, distribution center delays, missing item in the delivery, or not receiving the correct amount or incorrect deliveries.
+                9.4. Product warranty or conditions: Requests for warranty, or shipping fees. This does not include emails inquiring about price discrepancies.
+                9.5. Return status inquiries: Queries about order or item return status, return receipt or confimation, return related tracking or shipment, they must be categorized as "Out of Scope".
+                9.6. Request to cancel orders: If an email is asking for an order cancellation or closure, it should be categorized as "Out of Scope".
+                9.7. Alternative product guidance: If the unresolved query in the email is asking what the alternative or homologous product to a given product is (e.g., what is the homologous alternative to Product A), categorize as "Out of Scope." 
+                9.8. Emails not intended for customer care: If the email is clearly intended for someone other than customer care, such as a sales representative, credit services, or another department, categorize it as 'Out of Scope'.
+                9.9. Inquires about order associated with sample products and demo kits: If the email is inquiring about orders associated with sample product requests, demo kits or even requests to ship sample products, categorize it as "Out of Scope".
+                9.10. Inquiries about unit of sale or packaging: If the email inquires about the unit of sale or how a product is packaged or sold (e.g., per box, per pack, or per unit), packaging types, or sales format for a specific product, categorize it as "Out of Scope".
+                9.11.  Product pricing and order placement inquiries: If the email asks about part or product pricing or quotes, product condition, warranty, order placement questions, or shipping fees for any product or item, categorize it as 'Out of Scope'.
+                9.12. Email related to Dispatch: Emails requesting the generation of a dispatch or queries related to dispatching, are not meant for the customer service team and hence need to be categorized as "Out of Scope".
+                9.13. Modifying or referencing invoices for other purposes: Emails inquiring about modifying, updating, correcting, processing, or referencing an invoice for purposes such as purchase orders, billing disputes, or amount clarifications.
+                9.14. Emails unrelated to the defined categories: Any email that doesn't fit the outlined categories.
+                9.15. Classify the email as Out of Scope (OOS) if it is requesting an Out of Stock (OOS) status letter, Backorder letter, or Notification of Product Unavailability, as these are documentation requests and not part of the supported transactional categories.
